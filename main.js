@@ -76,5 +76,31 @@ $(document).ready(function() {
 			resetCalculation();
 		}   
 	}); 
+
+
+
+	/////////// TWEEN MAX ANIMATIONS ////////////
+
+ TweenMax.staggerFrom("div", 2, { scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut }, 0.2);
+
+
+	$('.buttons').on('click', "div", bounceIn) //click event to execute animation.
 		
 }); // close document ready function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
