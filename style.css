@@ -1,6 +1,14 @@
+html {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 body {
     background-color: aliceblue;
     font-family: monospace;
+    margin: 0 auto;
+    width: 50%;
 }
 
 h1 {
