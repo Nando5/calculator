@@ -81,10 +81,17 @@ $(document).ready(function() {
 
 	/////////// TWEEN MAX ANIMATIONS ////////////
 
- TweenMax.staggerFrom("div", 2, { scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut }, 0.2);
+//intro animation upon load
+TweenMax.staggerFrom("div", 2, { scale:0.5, opacity:0, delay:0.5, ease:Elastic.easeOut }, 0.2);
 
-
-	$('.buttons').on('click', "div", bounceIn) //click event to execute animation.
+var buttonPress = function() {
+	var that = this; //stores this into a variable.
+		currentTween = TweenMax.to(('#' + this.id), 1, { scale:0.5, ease:Elastic.easeOut }, 0.2);
+		onComplete: buttonPress, 
+			TweenMax.to(('#' + this.id), 1, { scale:1, ease:Elastic.easeOut }, 0.2); //onComplete do this.
+	}
+	
+	$('.buttons').on('click', "div", buttonPress) //click event to execute animation.
 		
 }); // close document ready function
 
