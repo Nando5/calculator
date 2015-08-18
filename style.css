@@ -5,37 +5,34 @@ html {
 }
 
 body {
-    background-color: aliceblue;
-    font-family: monospace;
+    background-color: #000000;
+    font-family: Arial, Helvetica;
     margin: 0 auto;
     width: 300px
 }
 
 h1 {
-    color: #6F6D6D;
+    color: #D8D8D8;
     text-align: center;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .calculator {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 216px;
     height: 362px;
-    background-color: #898A89;
-    border-radius: 10px;
     padding: 5px;
-    border: 3px solid #6F6D6D;
 }
 
 input {
     width: 208px;
     height: 50px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    background-color: #BBDACF;
-    border: 1px solid #CACACA;
+    margin-bottom: 2px;
+    border-radius: 2px;
+    background-color: #D3FFDD;
+    border: 1px solid #77A2A0;
     text-align: right;
     font-size: 30px;
     padding-right: 5px;
@@ -44,15 +41,15 @@ input {
 .buttons div {
     width: 50px;
     height: 50px;
-    background-color: #45987A;
+    background-color: #5D8A87;
     margin: 1px;
     float: left;
     color: #fff;
     text-align: center;
     font-size: 20px;
     line-height: 50px;
-    border-radius: 10px;
-    border: 1px solid #1F5844;
+    border-radius: 2px;
+    border: 1px solid #2A6069;
 }
 
 #clear {
@@ -67,11 +64,43 @@ input {
 marquee {
 	height: 25px;
 	margin: 1px;
-	margin-top: 5px;
-	background-color: #BBDACF;
-	border: 1px solid #CACACA;
-	border-radius: 10px;
+	margin-top: 2px;
+	background-color: #F1DC63;
+	border: 1px solid #FFE249;
+	border-radius: 2px;
 	text-align: center;
 	line-height: 25px;
 	color: #6F6D6D;
+}
+
+#multiply, #addition, #subtract, #divide {
+    background-color: #4DA9CA;
+    border: 1px solid #2B6275;
+}
+
+#multiply:hover, #addition:hover, #subtract:hover, #divide:hover {
+    background-color: #36778E;
+}
+
+#equal {
+    background-color: #43B78C;
+    border: 1px solid #2A795C;
+}
+
+#equal:hover {
+    background-color: #399C78;
+}
+
+#clear {
+    background-color: #F98250;
+    border: 1px solid #B1613F;
+}
+
+#clear:hover {
+    background-color: #CE6A40;
+}
+
+#git {
+    background-image: url(github.svg);
+    background-repeat: no-repeat;
 }
