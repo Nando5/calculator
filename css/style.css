@@ -21,13 +21,14 @@ body {
     margin: 20px 0 15px 0;
 }
 
-p { 
+.container p { 
     text-align: center;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 14px;
     line-height: 20px;
+    color: #585858;
 }
 
 .calculator {
